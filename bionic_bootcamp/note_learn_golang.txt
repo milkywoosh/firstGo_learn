@@ -1,0 +1,18 @@
+- konkurensi -> di level bahasa
+- pararel --> pemrosesan data  		   dalam 1 waktu pada bnyk prosesor
+- garbage collector
+- kompilasi cepat
+- bukan bahasa hirarkial -> tak perlu 	mikirin segmen OOP
+
+
+- GO path --> variable dmn semua project disimpan, dalam folder golang file project biasanya disimpan di folder SRC(as Workspace)
+
+If a variable starts with an uppercase letter, then that variable is accessible outside the package it was declared in (or exported). If a variable starts with a lowercase letter, then it is only available within the package it is declared in.
+
+uint8
+uint16
+uint32
+uint64
+int64
+decimal
+
