@@ -1,5 +1,7 @@
 package main
-import "fmt"
+import (
+	"fmt"
+)
 
 /*  
 	create function here!! 
@@ -7,10 +9,14 @@ import "fmt"
 */
 
 // cannot use "const"!!
-var data = [5]int{1,2,3,4,5}
 
+var array = [3] string {"one", "two", "three"}
 
 func main() {
 	
+	var i int
+	for i=0; i<len(array);i++ {
+		fmt.Println(array[i])
+	}
 	
 }

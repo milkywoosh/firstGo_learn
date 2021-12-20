@@ -5,8 +5,18 @@ const (
 	firstState bool = true
 )
 
-func main() {
+/*
+func BinarySearch(n int, start int, end int, array[] int) [] int {
 
-	fmt.Println(firstState)
+}
+*/
+
+func GetArray(arr[3] int) [3]int {
+	return arr
+}
+
+func main() {
+	// var test = [...]int{1,2,3}
+	fmt.Println(GetArray([3]int{4,3,2}))
 
 }

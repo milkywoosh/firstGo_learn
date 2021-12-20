@@ -1,4 +1,5 @@
-- konkurensi -> di level bahasa
+- konkurensi -> di level bahasa -> memecah task jd unit lebih kecil
+                dan dikerjakaan dalam urutan yang acak tanpa pengaruhi hasil akhir
 - pararel --> pemrosesan data  		   dalam 1 waktu pada bnyk prosesor
 - garbage collector
 - kompilasi cepat
