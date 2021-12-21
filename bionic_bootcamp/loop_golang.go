@@ -1,13 +1,21 @@
 package main
-import "fmt"
+import (
+	"fmt"
+)
 
 
-
-
+var arr = [3] int {1,2,3}
 func main() {
 
-	for i:=5; i>0; i-- {
-		fmt.Println(i)
+	/*	var j int
+		for j=0; j<5; j++ {
+			fmt.Println(j)
+		}
+	*/
+
+	var i, value int
+	for i, value = range (arr){
+		fmt.Printf("Index: %d -> value: %d\n", i, value)
 	}
 
 }
