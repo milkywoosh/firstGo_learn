@@ -1,6 +1,6 @@
 // binary tree
 /*
-			root
+		    root
 		node	node
 	node			node
 */
