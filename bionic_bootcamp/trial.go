@@ -3,39 +3,44 @@ import (
 	"fmt"
 )
 
-// declare array
-var Employee = [3] string{"Ben", "Ron", "John"}
+// slice 
+/*
 
-// declare function
-func TesSwitch(arg[3] string, target int) string {
-	var result string
-	for i:=0; i<len(arg); i++ {
-		if (i == target) {
-			switch (arg[target]) {
-				case "Ben":
-					result = "ONE"
-					break
-				case "Ron":
-					result = "TWO"
-					break
-				case "John":
-					result = "THREE"
-					break
-				default:
-					result = "NOTHING"
-					break
-			}
-		} else {
-			continue
-		}
-		
-	}
-	return result
-}
+	append()
+	len()
+	cap()
+*/
 
+var arr = [4]int{2,2,2,2}
+var addition =  []int{1,1,1,1,1,1,1,1}
 func main() {
+	var i int
+
+	slice:= arr[0:2]
+	fmt.Println(slice)
+	fmt.Println(cap(arr))
+	fmt.Println("cap(slice): ", cap(slice))	
+	slice = append(slice, 4)
+	slice = append(slice, 10)
+	slice = append(slice, 20)
+	fmt.Println("cap(slice): ", cap(slice))	
 	
-	result:=TesSwitch(Employee, 2)
-	fmt.Println(result)
+
+	// increasing capacity to 32?? by adding 8 more element, 
+	// from existing 9 element
+	for i = range addition {
+		slice = append(slice, addition[i])
+	}
+	fmt.Println("len: ",len(slice))
+	fmt.Println("cap(slice): ", cap(slice))	
+	fmt.Println(slice)
+
 }
+
+
+
+
+
+
+
 

@@ -3,6 +3,13 @@ import (
 	"fmt"
 )
 /*
+	note: Go can automatically increase its "capacity"
+	from 2,4,8,16,32 and so on..
+	after the curent length increase more than
+	current capacity
+*/
+
+/*
 	[] type_value
 	append(arr, value)
 	len()

@@ -1,6 +1,6 @@
-- konkurensi -> di level bahasa -> memecah task jd unit lebih kecil
+- konkurensi -> di level bahasa -> memecah task jd unit-unit lebih kecil
                 dan dikerjakaan dalam urutan yang acak tanpa pengaruhi hasil akhir
-- pararel --> pemrosesan data  		   dalam 1 waktu pada bnyk prosesor
+- pararel --> pemrosesan banyak data/proses  		   dalam 1 waktu pada prosesor
 - garbage collector
 - kompilasi cepat
 - bukan bahasa hirarkial -> tak perlu 	mikirin segmen OOP
