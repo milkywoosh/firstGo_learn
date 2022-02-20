@@ -48,11 +48,11 @@ func (l *LinkedList) Display() {
 	}
 }
 
-func main() {
-	listData := LinkedList{}
-	listData.Display()
-	listData.AddToTail(10)
-	listData.AddToTail(12)
-	listData.AddToTail(14)
-	listData.Display()
-}
+// func main() {
+// 	listData := LinkedList{}
+// 	listData.Display()
+// 	listData.AddToTail(10)
+// 	listData.AddToTail(12)
+// 	listData.AddToTail(14)
+// 	listData.Display()
+// }

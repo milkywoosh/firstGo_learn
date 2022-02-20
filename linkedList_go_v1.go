@@ -61,12 +61,12 @@ func (l *Link) ShowAll() {
 
 // next need to learn using INTERFACE
 
-func main() {
-	link := Link{}
-	link.AddToTail(12)
-	link.AddToTail(13)
-	link.Prepend(50)
-	link.AddToTail(15)
-	link.Prepend(500)
-	link.ShowAll()
-}
+// func main() {
+// 	link := Link{}
+// 	link.AddToTail(12)
+// 	link.AddToTail(13)
+// 	link.Prepend(50)
+// 	link.AddToTail(15)
+// 	link.Prepend(500)
+// 	link.ShowAll()
+// }

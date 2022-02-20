@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 type Human interface {
 	Eating(arg string) bool
 }
@@ -31,11 +27,11 @@ func (k *Kristen) Eating(arg string) bool {
 
 }
 
-func main() {
-	doni := &Muslim{"doni", "muslim"}
-	robert := &Kristen{"robert", "kristen"}
+// func main() {
+// 	doni := &Muslim{"doni", "muslim"}
+// 	robert := &Kristen{"robert", "kristen"}
 
-	test_doni := doni.Eating("ayam")
-	test_robert := robert.Eating("babi")
-	fmt.Println(test_doni, test_robert)
-}
+// 	test_doni := doni.Eating("ayam")
+// 	test_robert := robert.Eating("babi")
+// 	fmt.Println(test_doni, test_robert)
+// }
