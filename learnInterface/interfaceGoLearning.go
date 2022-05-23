@@ -15,6 +15,7 @@ type Sembako struct {
 	weight int
 }
 
+// struct method
 func (s Sembako) FilterValue(standardValue int) (bool, string) {
 	if s.weight > standardValue {
 		return false, "too much"
