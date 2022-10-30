@@ -10,11 +10,9 @@
 
 */
 
-
+// init --> var wg sync.WaitGroup --> as argument for parameter group
 func RunAsync(group *sync.WaitGroup, i int, flag string) {
 	defer group.Done()
-
-		
 
 	group.Add(1)
 

@@ -8,28 +8,30 @@
     )
 
 
-    type Asset map[string]int
+    type Asset map[string]int // map + goroutine wajib pake sync.Map
 
     type Money struct {
         mutx sync.Mutex
         v int
     }
 
-    func (m *Money) AddSaving(val int) {
-
-            m.mutx.Lock()
-
-            m.v += val
-
+    func (m *Money) AddSavingWg(val int, wg *sync.WaitGroup) {
+            defer wg.Done()
             defer m.mutx.Unlock()
-
-
+            m.mutx.Lock()
+            m.v += val
     }
 
+     func (m *Money) AddSaving(val int) {
+            defer m.mutx.Unlock()
+            m.mutx.Lock()
+            m.v += val
+    }
     var John Money
     var Cash Asset
     var Store int
     var m sync.Mutex
+    var wg sync.WaitGroup
 
     func main() {
 
@@ -40,8 +42,8 @@
             v : 0,
         }
         for i := 0; i < 1000; i++ {
+              
               go John.AddSaving(i)     
-            
         }
         
         
@@ -49,6 +51,7 @@
         
         // increment John based on needed with function struct
         // time.Sleep(500 * time.Millisecond)
+
         fmt.Printf("%v\n", John.v)
 
 
