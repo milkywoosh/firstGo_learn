@@ -33,7 +33,7 @@ func main() {
 			for _, word:= range words {
 				// histogram[word]+=1 
 				// try to replace supply each word with channel
-				ch<- word
+				ch<- word // stream data to other goroutine !
 				
 
 			}
@@ -50,7 +50,7 @@ func main() {
 	
 
 	// second easiest way using 'break' [val, ok:= <-ch]
-	/*
+
 		for {
 			val, ok:= <-ch
 			if !ok {
@@ -62,7 +62,7 @@ func main() {
 		}
 
 		fmt.Println(histogram)
-	*/
+
 
 
 
