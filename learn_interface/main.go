@@ -2,6 +2,8 @@ package main
 
 import (
     "fmt"
+    _"reflect"
+    _"strconv"
 )
 // try to implement interface
 
@@ -14,11 +16,15 @@ type Fruit struct {
 }
 
 func (f Fruit) FruitPrefix(prefix string) {
-
+    var tmp string
     for i := 0; i < len(f.names); i++ {
-           if f.names[i][0] == prefix {
-            fmt.Println(data)    
-           } 
+        tmp = string(f.names[i][0])
+
+         if tmp == prefix {
+            fmt.Printf("%s. %s\n", "ok", tmp)
+         } else {
+            fmt.Printf("%s. %s\n", "false", tmp)
+         }
     }
          
 

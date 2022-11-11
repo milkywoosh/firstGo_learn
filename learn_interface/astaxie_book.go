@@ -63,7 +63,8 @@ func main() {
 		owner: "car1",
 		amount_customer: 0,
 	}
-	car1 = &car1_
+	// car1 = &car1_ // ---> use pointer type value to AVOID ERROR !
+	car1 = car1_ // ---> if not using pointer type value, give ERROR
 
 	// car1.Courrier("food")
 	car1.RideHailing("gen", "lubang buaya")

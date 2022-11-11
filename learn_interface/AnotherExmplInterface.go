@@ -36,7 +36,7 @@ func (c Credivo) TaxBill(persen float64) float64 {
 
 // arg for interface
 func ExecInterface(c Calculate) {
-	fmt.Println(c)
+	fmt.Println("check: ", c)
 	fmt.Println("income: ", c.NetIncome())
 	fmt.Println("tax: ", c.TaxBill(2))
 	//fmt.Println()
@@ -50,7 +50,4 @@ func main() {
 	// implement interface with all methods in Calculate
 	ExecInterface(Am)
 	ExecInterface(Cr)
-
-	fmt.Println(Am.revenue)
-	fmt.Println(Cr.revenue)
 }

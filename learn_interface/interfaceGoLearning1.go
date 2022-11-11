@@ -1,5 +1,8 @@
 package main
 
+import(
+	"fmt"
+)
 type Human interface {
 	Eating(arg string) bool
 }
@@ -13,7 +16,7 @@ type Kristen struct {
 func (m *Muslim) Eating(arg string) bool {
 	var result bool
 	if m.religion == "muslim" {
-		if arg == "babi" {
+		if arg == "babi" || arg == "Babi" || arg == "BABI" {
 			result = false
 		} else {
 			result = true
@@ -27,11 +30,12 @@ func (k *Kristen) Eating(arg string) bool {
 
 }
 
-// func main() {
-// 	doni := &Muslim{"doni", "muslim"}
-// 	robert := &Kristen{"robert", "kristen"}
+func main() {
+	// doni := &Muslim{"doni", "muslim"}
+	doni := Muslim{"doni", "muslim"}
+	robert := &Kristen{"robert", "kristen"}
 
-// 	test_doni := doni.Eating("ayam")
-// 	test_robert := robert.Eating("babi")
-// 	fmt.Println(test_doni, test_robert)
-// }
+	test_doni := doni.Eating("Babi")
+	test_robert := robert.Eating("babi")
+	fmt.Println(test_doni, test_robert)
+}
