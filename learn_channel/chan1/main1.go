@@ -36,7 +36,7 @@ func main() {
 	chEven_ := make(chan int,1)
 	chOdd_ := make(chan int,1)
 
-	go PassChan(5, chEven_, chOdd_)
+	go PassChan(18, chEven_, chOdd_)
 	time.Sleep(1 * time.Second) // --> give chance to variable receiver to receive value
 
 		select {
@@ -51,8 +51,6 @@ func main() {
 				fmt.Println("no data received??")
 		}
 
-
-	
 //	defer close(chEven)
 //	defer close(chOdd)
 

@@ -20,7 +20,7 @@ func main() {
 	data:= []string{
 		"one two three", 
 		"one two three",
-		"one two three",
+		"one two three four",
 	}
 	histogram:= make(map[string]int)
 	/*

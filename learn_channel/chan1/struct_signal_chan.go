@@ -27,6 +27,8 @@ func main() {
 		for _, val:= range data{
 			words:= strings.Split(val, " ")
 			for _, word:= range words{
+				// note: the map has been initialized, so it is started from 0
+				// so it is automatically started from 0 and at the same time increment by 1
 				histogram[word]+=1
 			}
 		}
